@@ -43,7 +43,7 @@
 # print(f"{convertirana_valuta:.2f}")
 
 
-#Zadacha 4
+# Zadacha 4
 
 # broi_masi = int(input())
 # dulzina_masi = float(input())
@@ -62,6 +62,50 @@
 # print(f'{obshta_cena:.2f} USD')
 # print(f'{obshta_cena * kurs_bgn:.2f} BGN')
 
+#Zadacha 5
+# import math
+#
+# duljina_m = float(input())
+# shirina_m = float(input())
+# strana_garderob_m = float(input())
+#
+# zala = (duljina_m * 100) * (shirina_m * 100)
+# garderob = (strana_garderob_m * 100) * (strana_garderob_m * 100)
+#
+# peika = zala / 10
+# svobodo_prostranstova = zala - garderob - peika
+# broi_tanciori = svobodo_prostranstova // (40 + 7000)
+# print(int(broi_tanciori))
+
+
+# Zadacha 6
+
+
+# dni_kampania = int(input())
+# sladkari_broi = int(input())
+# torti_broi = float(input()) * 45
+# gofreti = float(input()) * 5.80
+# palachinki = float(input()) * 3.20
+#
+# suma_kampania = ((torti_broi + gofreti + palachinki) * sladkari_broi) * dni_kampania
+# suma_kraina = suma_kampania - ((1/8) * suma_kampania)
+# print(f'{suma_kraina:.2f}')
+
+
+#Zadacha 7
+whiskey_price = float(input())
+bear = float(input())
+wine = float(input())
+rakja = float(input())
+whiskey = float(input())
+
+price_rakja = whiskey_price / 2
+price_bear = 0.2 * price_rakja
+price_wine = 0.6 * price_rakja
+
+total_sum = (whiskey_price * whiskey) + (bear * price_bear) + (price_rakja * rakja) + (price_wine * wine)
+
+print(f'{total_sum:.2f}')
 
 
 
