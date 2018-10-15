@@ -32,12 +32,18 @@
 #Zadacha 3
 
 
-# stoinost = float(input())
-# vhodna_valuta = input()
-# izhodna_valuta = input()
-#
+stoinost = float(input())
+vhodna_valuta = input()
+izhodna_valuta = input()
+
 # kursove = {"USD": 1.79549,"EUR": 1.95583 , "GBP": 2.53405, "BGN": 1}
-#
+
+USD = 1.79
+EUR = 1.95
+GBP = 2.53
+
+print(stoinost * eval(vhodna_valuta) / eval(izhodna_valuta))
+
 # convertirana_valuta = stoinost * (kursove[vhodna_valuta] / kursove[izhodna_valuta])
 #
 # print(f"{convertirana_valuta:.2f}")
@@ -93,19 +99,19 @@
 
 
 #Zadacha 7
-whiskey_price = float(input())
-bear = float(input())
-wine = float(input())
-rakja = float(input())
-whiskey = float(input())
-
-price_rakja = whiskey_price / 2
-price_bear = 0.2 * price_rakja
-price_wine = 0.6 * price_rakja
-
-total_sum = (whiskey_price * whiskey) + (bear * price_bear) + (price_rakja * rakja) + (price_wine * wine)
-
-print(f'{total_sum:.2f}')
+# whiskey_price = float(input())
+# bear = float(input())
+# wine = float(input())
+# rakja = float(input())
+# whiskey = float(input())
+#
+# price_rakja = whiskey_price / 2
+# price_bear = 0.2 * price_rakja
+# price_wine = 0.6 * price_rakja
+#
+# total_sum = (whiskey_price * whiskey) + (bear * price_bear) + (price_rakja * rakja) + (price_wine * wine)
+#
+# print(f'{total_sum:.2f}')
 
 
 
