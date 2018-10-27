@@ -79,14 +79,90 @@
 # else:
 #     print(f'{hour+1}:' + f'{(minutes+15) % 60}'.zfill(2))
 
-hours = []
-minutes = []
+# hours = []
+# minutes = []
+#
+# for x in range(0,23):
+#     hours.append(x)
+# for x in range(0,60):
+#     minutes.append(x)
+#
+# hour = hours[int(input()]
+# # minutes = int(input())
 
-for x in range(0,23):
-    hours.append(x)
-for x in range(0,60):
-    minutes.append(x)
+#Zadacha 6
+# import math
+#
+# bro_a = 1 / float(input())
+# bro_b = 1 / float(input())
+# bro_c = 1 / float(input())
+# father = float(input())
+#
+# cleaning_time = 1 / (bro_a + bro_b + bro_c)
+# total_cleaning_time = cleaning_time + (0.15 * cleaning_time)
+#
+# time_left = father - total_cleaning_time
+#
+# print(f'Cleaning time: {total_cleaning_time:.2f}')
+#
+# if time_left > 0:
+#     print(f'Yes, there is a surprise - time left -> {math.floor(time_left)} hours.')
+# else:
+#     print(f"No, there isn't a surprise - shortage of time -> {math.ceil(abs(time_left))} hours.")
 
-hour = int(input())
-minutes = int(input())
+#Zadacaha 7
+family_income = float(input())
+gpa = float(input())
+min_salary = float(input())
 
+social = 0.35 * min_salary
+excellence = gpa * 25
+
+if family_income < min_salary:
+    if gpa < 4.50:
+        print('You cannot get a scholarship!')
+    elif gpa >= 4.50 and gpa < 5.50:
+        print(f'You get a Social scholarship {round(social)} BGN')
+    elif gpa >= 5.50:
+        if excellence < social:
+            print(f'You get a Social scholarship {int(social)} BGN')
+        elif excellence >= social:
+            print(f'You get a scholarship for excellent results {int(excellence)} BGN')
+elif family_income > min_salary:
+    if gpa < 5.50:
+        print('You cannot get a scholarship!')
+    if gpa >= 5.50:
+        print(f'You get a scholarship for excellent results {int(excellence)} BGN')
+#
+
+
+#Zadacha 8
+
+import math
+# steps = int(input())
+# dancers = int(input())
+# days_to_learn = int(input())
+#
+# steps_a_day = steps / days_to_learn / steps
+#
+# percent_per_dancer = math.ceil(steps_a_day * 100) / dancers
+#
+# if steps_a_day > 0.13:
+#     print(f'No, They will not succeed in that goal! Required {percent_per_dancer:.2f}% steps to be learned per day.')
+# else:
+#     print(f'Yes, they will succeed in that goal! {percent_per_dancer:.2f}%.')
+
+#Zadacha 9
+# import math
+# record_sek = float(input())
+# distance_meters = float(input())
+# sec_per_met = float(input())
+#
+# time_to_swim = distance_meters * sec_per_met
+# fatigue = math.floor(distance_meters / 15) * 12.5
+# total_time_to_swim = time_to_swim + fatigue
+#
+# if total_time_to_swim < record_sek:
+#     print(f'Yes, he succeeded! The new world record is {total_time_to_swim:.2f} seconds.')
+# else:
+#     print(f'No, he failed! He was {(total_time_to_swim - record_sek):.2f} seconds slower.')
