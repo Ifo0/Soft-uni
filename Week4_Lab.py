@@ -126,48 +126,48 @@
 
 
 
-budget = int(input())
-season = input()
-number_of_fisherman = int(input())
+# budget = int(input())
+# season = input()
+# number_of_fisherman = int(input())
 
-price = None
-
-
-if season == 'Spring':
-    price = 3000
-    if number_of_fisherman <= 6:
-        price -= 0.1 * price
-    elif 6 < number_of_fisherman < 12:
-        price -= 0.15 * price
-    elif number_of_fisherman >= 12:
-        price -= 0.25 * price
-elif season == 'Summer' or season == 'Autumn':
-    price = 4200
-    if number_of_fisherman <= 6:
-        price -= 0.1 * price
-    elif 6 < number_of_fisherman < 12:
-        price -= 0.15 * price
-    elif number_of_fisherman >= 12:
-        price -= 0.25 * price
-elif season == 'Winter':
-    price = 2600
-    if number_of_fisherman <= 6:
-        price -= 0.1 * price
-    elif 6 < number_of_fisherman < 12:
-        price -= 0.15 * price
-    elif number_of_fisherman >= 12:
-        price -= 0.25 * price
+# price = None
 
 
-if not season == 'Autumn' and number_of_fisherman % 2 == 0:
-    price -= 0.05 * price
+# if season == 'Spring':
+#     price = 3000
+#     if number_of_fisherman <= 6:
+#         price -= 0.1 * price
+#     elif 6 < number_of_fisherman < 12:
+#         price -= 0.15 * price
+#     elif number_of_fisherman >= 12:
+#         price -= 0.25 * price
+# elif season == 'Summer' or season == 'Autumn':
+#     price = 4200
+#     if number_of_fisherman <= 6:
+#         price -= 0.1 * price
+#     elif 6 < number_of_fisherman < 12:
+#         price -= 0.15 * price
+#     elif number_of_fisherman >= 12:
+#         price -= 0.25 * price
+# elif season == 'Winter':
+#     price = 2600
+#     if number_of_fisherman <= 6:
+#         price -= 0.1 * price
+#     elif 6 < number_of_fisherman < 12:
+#         price -= 0.15 * price
+#     elif number_of_fisherman >= 12:
+#         price -= 0.25 * price
 
-left = budget - price
 
-if left >= 0:
-    print(f"Yes! You have {left:.2f} leva left.")
-else:
-    print(f"Not enough money! You need {abs(left):.2f} leva.")
+# if not season == 'Autumn' and number_of_fisherman % 2 == 0:
+#     price -= 0.05 * price
+
+# left = budget - price
+
+# if left >= 0:
+#     print(f"Yes! You have {left:.2f} leva left.")
+# else:
+#     print(f"Not enough money! You need {abs(left):.2f} leva.")
 
 
 # budget = int(input())
@@ -199,5 +199,37 @@ else:
 #     print(f"Not enough money! You need {left:.2f} leva.")
 
 
+
+
+# Zadacha 7
+
+hour = int(input())
+minutes = int(input())
+arrival_hour = int(input())
+arrival_minute = int(input())
+
+
+exam_time = (hour * 60) + minutes
+arrival_time = arrival_hour * 60 + arrival_minute
+
+
+
+if arrival_time == exam_time or exam_time >  arrival_time >=  exam_time - 30:
+    print('On time')
+    if not arrival_time == exam_time:
+        print(f"{exam_time - arrival_time} minutes before the start")
+elif arrival_time < exam_time - 30:
+    print('Early')
+    if (exam_time - 60) < arrival_time < (exam_time - 30):
+        print(f"{exam_time - arrival_time} minutes before the start")
+    elif arrival_time <= exam_time - 60:
+        print(f"{(exam_time - arrival_time) // 60:.0f}" + f":{(exam_time - arrival_time) % 60:02d}" + " hours before the start")
+elif arrival_time > exam_time:
+    print('Late')
+    if arrival_time < exam_time + 60:
+        print(f"{arrival_time - exam_time} minutes after the start")
+    elif arrival_time >= exam_time + 60:
+        print(f"{(arrival_time - exam_time) // 60:.0f}" + f":{(arrival_time - exam_time) % 60:02d}" + " hours after the start")
+    
 
 
