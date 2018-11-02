@@ -103,39 +103,47 @@
 
 #Zadacha 10
 
-budget = float(input())
-type_of_tickets = input().lower()
-size_of_group = int(input())
+# budget = float(input())
+# type_of_tickets = input().lower()
+# size_of_group = int(input())
+#
+# transportation_cost = None
+# budget_left = None
+# ticket_cost = None
+# balance = None
+# vip_ticket = 499.99
+# normal_ticket = 249.99
+#
+# if 1 <= size_of_group <= 4:
+#     transportation_cost = 0.75 * budget
+# elif 5 <= size_of_group <= 9:
+#     transportation_cost = 0.6 * budget
+# elif 10 <= size_of_group <= 24:
+#     transportation_cost = 0.5 * budget
+# elif 25 <= size_of_group <= 49:
+#     transportation_cost = 0.4 * budget
+# elif size_of_group >= 50:
+#     transportation_cost = 0.25 * budget
+#
+# budget_left = budget - transportation_cost
+#
+# if type_of_tickets == 'vip':
+#     ticket_cost = size_of_group * vip_ticket
+# elif type_of_tickets == 'normal':
+#     ticket_cost = size_of_group * normal_ticket
+#
+# balance = budget_left - ticket_cost
+#
+# if balance >= 0:
+#     print(f'Yes! You have {balance:.2f} leva left.')
+# elif balance < 0:
+#     print(f'Not enough money! You need {abs(balance):.2f} leva.')
 
-transportation_cost = None
-budget_left = None
-ticket_cost = None
-balance = None
-vip_ticket = 499.99
-normal_ticket = 249.99
+def fibonacci(number):
+    if number == 1 or number == 2:
+        return 1
+    else:
+        return fibonacci(number - 1) + fibonacci(number - 2)
 
-if 1 <= size_of_group <= 4:
-    transportation_cost = 0.75 * budget
-elif 5 <= size_of_group <= 9:
-    transportation_cost = 0.6 * budget
-elif 10 <= size_of_group <= 24:
-    transportation_cost = 0.5 * budget
-elif 25 <= size_of_group <= 49:
-    transportation_cost = 0.4 * budget
-elif size_of_group >= 50:
-    transportation_cost = 0.25 * budget
-
-budget_left = budget - transportation_cost
-
-if type_of_tickets == 'vip':
-    ticket_cost = size_of_group * vip_ticket
-elif type_of_tickets == 'normal':
-    ticket_cost = size_of_group * normal_ticket
-
-balance = budget_left - ticket_cost
-
-if balance >= 0:
-    print(f'Yes! You have {balance:.2f} leva left.')
-elif balance < 0:
-    print(f'Not enough money! You need {abs(balance):.2f} leva.')
-
+if __name__ == '__main__':
+    print(fibonacci(10))
