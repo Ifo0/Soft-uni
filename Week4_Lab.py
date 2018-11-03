@@ -126,53 +126,55 @@
 
 
 
-budget = int(input())
-season = input()
-number_of_fisherman = int(input())
-
-price = None
-
-
-if season == 'Spring':
-    price = 3000
-    if number_of_fisherman <= 6:
-        price -= 0.1 * price
-    elif 6 < number_of_fisherman < 12:
-        price -= 0.15 * price
-    elif number_of_fisherman >= 12:
-        price -= 0.25 * price
-elif season == 'Summer' or season == 'Autumn':
-    price = 4200
-    if number_of_fisherman <= 6:
-        price -= 0.1 * price
-    elif 6 < number_of_fisherman < 12:
-        price -= 0.15 * price
-    elif number_of_fisherman >= 12:
-        price -= 0.25 * price
-elif season == 'Winter':
-    price = 2600
-    if number_of_fisherman <= 6:
-        price -= 0.1 * price
-    elif 6 < number_of_fisherman < 12:
-        price -= 0.15 * price
-    elif number_of_fisherman >= 12:
-        price -= 0.25 * price
-
-
-if not season == 'Autumn' and number_of_fisherman % 2 == 0:
-    price -= 0.05 * price
-
-left = budget - price
-
-if left >= 0:
-    print(f"Yes! You have {left:.2f} leva left.")
-else:
-    print(f"Not enough money! You need {abs(left):.2f} leva.")
-
+# budget = int(input())
+# season = input()
+# number_of_fisherman = int(input())
+#
+# price = None
+#
+#
+# if season == 'Spring':
+#     price = 3000
+#     if number_of_fisherman <= 6:
+#         price -= 0.1 * price
+#     elif 6 < number_of_fisherman < 12:
+#         price -= 0.15 * price
+#     elif number_of_fisherman >= 12:
+#         price -= 0.25 * price
+# elif season == 'Summer' or season == 'Autumn':
+#     price = 4200
+#     if number_of_fisherman <= 6:
+#         price -= 0.1 * price
+#     elif 6 < number_of_fisherman < 12:
+#         price -= 0.15 * price
+#     elif number_of_fisherman >= 12:
+#         price -= 0.25 * price
+# elif season == 'Winter':
+#     price = 2600
+#     if number_of_fisherman <= 6:
+#         price -= 0.1 * price
+#     elif 6 < number_of_fisherman < 12:
+#         price -= 0.15 * price
+#     elif number_of_fisherman >= 12:
+#         price -= 0.25 * price
+#
+#
+# if not season == 'Autumn' and number_of_fisherman % 2 == 0:
+#     price -= 0.05 * price
+#
+# left = budget - price
+#
+# if left >= 0:
+#     print(f"Yes! You have {left:.2f} leva left.")
+# else:
+#     print(f"Not enough money! You need {abs(left):.2f} leva.")
+#
 
 # budget = int(input())
 # season = input()
 # fisherman = int(input())
+#
+# Zadacha 7
 #
 # Spring = 3000
 # Summer = Autumn = 4200
@@ -197,6 +199,76 @@ else:
 #     print(f"Yes! You have {left:.2f} leva left.")
 # elif price > budget:
 #     print(f"Not enough money! You need {left:.2f} leva.")
+
+#Zadacha 8
+
+# budget = float(input())
+# season = input()
+#
+# destination = None
+# facility = None
+# expenditure = None
+#
+# if budget <= 100:
+#     destination = 'Bulgaria'
+#     if season == 'summer':
+#         facility = 'Camp'
+#         proportion = 0.3
+#         expenditure = proportion * budget
+#     elif season == 'winter':
+#         facility = 'Hotel'
+#         proportion = 0.7
+#         expenditure = proportion * budget
+# elif 100 < budget <= 1000:
+#     destination = 'Balkans'
+#     if season == 'summer':
+#         facility = 'Camp'
+#         proportion = 0.4
+#         expenditure = proportion * budget
+#     elif season == 'winter':
+#         facility = 'Hotel'
+#         proportion = 0.8
+#         expenditure = proportion * budget
+# elif budget > 1000:
+#     destination = 'Europe'
+#     facility = 'Hotel'
+#     proportion = 0.9
+#     expenditure = proportion * budget
+#
+# print(f"Somewhere in {destination}")
+# print(f"{facility} - {expenditure:.2f}")
+
+#Zadacha 9
+
+# n1 = int(input())
+# n2 = int(input())
+# operator = input()
+#
+# result = None
+# even_odd = None
+#
+# if n2 == 0:
+#     print(f"Cannot divide {n1} by zero")
+# elif operator == '+' or operator == '*' or operator == '-':
+#     if operator == '+':
+#         result = n1 + n2
+#     elif operator == '*':
+#         result = n1 * n2
+#     elif operator == '-':
+#         result = n1 - n2
+#     if result % 2 == 0:
+#         even_odd = 'even'
+#     else:
+#         even_odd = 'odd'
+#     print(f"{n1} {operator} {n2} = {result} - {even_odd}")
+# elif operator == '/':
+#     result = n1 / n2
+#     print(f"{n1} / {n2} = {result:.2f}")
+# elif operator == '%':
+#     result = n1 % n2
+#     print(f"{n1} % {n2} = {result}")
+
+#Zadacha 10
 
 
 
