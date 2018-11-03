@@ -139,11 +139,119 @@
 # elif balance < 0:
 #     print(f'Not enough money! You need {abs(balance):.2f} leva.')
 
-def fibonacci(number):
-    if number == 1 or number == 2:
-        return 1
-    else:
-        return fibonacci(number - 1) + fibonacci(number - 2)
+# def fibonacci(number):
+#     if number == 1 or number == 2:
+#         return 1
+#     else:
+#         return fibonacci(number - 1) + fibonacci(number - 2)
+#
+# if __name__ == '__main__':
+#     print(fibonacci(10))
 
-if __name__ == '__main__':
-    print(fibonacci(10))
+# Zadacha 1
+
+# age = float(input())
+# gender = input()
+#
+# if (age < 16):
+#     if gender == 'f':
+#         print('Miss')
+#     else:
+#         print('Master')
+# else:
+#     if gender == 'f':
+#         print('Ms.')
+#     else:
+#         print('Mr.')
+
+# Zadacha 2
+
+# product = input()
+# city = input()
+# quantity = float(input())
+#
+# if city == 'Sofia':
+#     if product == 'coffee':
+#         print(f"{0.50 * quantity}")
+#     elif product == 'water':
+#         print(f"{0.80 * quantity}")
+#     elif product == 'beer':
+#         print(f"{1.20 * quantity}")
+#     elif product == 'sweets':
+#         print(f"{1.45 * quantity}")
+#     elif product == 'peanuts':
+#         print(f"{1.60 * quantity}")
+# elif city == 'Plovdiv':
+#     if product == 'coffee':
+#         print(f"{0.40 * quantity}")
+#     elif product == 'water':
+#         print(f"{0.70 * quantity}")
+#     elif product == 'beer':
+#         print(f"{1.15 * quantity}")
+#     elif product == 'sweets':
+#         print(f"{1.30 * quantity}")
+#     elif product == 'peanuts':
+#         print(f"{1.50 * quantity}")
+# elif city == 'Varna':
+#     if product == 'coffee':
+#         print(f"{0.45 * quantity}")
+#     elif product == 'water':
+#         print(f"{0.70 * quantity}")
+#     elif product == 'beer':
+#         print(f"{1.10 * quantity}")
+#     elif product == 'sweets':
+#         print(f"{1.35 * quantity}")
+#     elif product == 'peanuts':
+#         print(f"{1.55 * quantity}")
+
+# Zadacha 4
+#
+# product = input()
+#
+# fruits = ['banana', 'apple', 'kiwi', 'cherry', 'lemon', 'grapes']
+# vegetables = ['tomato', 'cucumber', 'pepper', 'carrot']
+#
+#
+# if product in fruits:
+#     print('fruit')
+# elif product in vegetables:
+#     print('vegetable')
+# else:
+#     print('unknown')
+
+
+#Zadacha 5
+
+# number = int(input())
+#
+# if not number in range(100, 201) and not number == 0:
+#     print('invalid')
+
+#Zadacha  8
+# number = int(input())
+#
+# days = ['Placeholder', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+#
+# if number >= 1 and number <= 7:
+#     print(days[number])
+# else:
+#     print('Error')
+
+#Zadacha 9
+
+# vhod = input()
+# dict = {'mamal': 'dog', 'reptile': ['crocodile', 'tortoise', 'snake']}
+#
+# if vhod in dict.values()
+#     print(dict.key)
+#
+# vhod = input()
+#
+# if vhod == 'dog':
+#     print('mammal')
+# elif vhod == 'crocodile' or vhod == 'tortoise' or vhod == 'snake':
+#     print('reptile')
+# else:
+#     print('unknown')
+
+

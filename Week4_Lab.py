@@ -269,7 +269,46 @@
 #     print(f"{n1} % {n2} = {result}")
 
 #Zadacha 10
+month = input()
+lenght_of_stay = int(input())
 
+cost_of_stay = None
 
+if month == 'May' or month == 'October':
+    ppn_s = 50
+    ppn_a = 65
+    cost_of_stay_s = lenght_of_stay * ppn_s
+    cost_of_stay_a = lenght_of_stay * ppn_a
+    if lenght_of_stay > 7 and lenght_of_stay <= 14:
+        cost_of_stay_s -= 0.05 * cost_of_stay_s
+    elif lenght_of_stay > 14:
+        cost_of_stay_s -= 0.3 * cost_of_stay_s
+        cost_of_stay_a -= 0.1 * cost_of_stay_a
+elif month == 'June' or month == 'September':
+    ppn_s = 75.20
+    ppn_a = 68.70
+    cost_of_stay_s = lenght_of_stay * ppn_s
+    cost_of_stay_a = lenght_of_stay * ppn_a
+    if lenght_of_stay > 14:
+        cost_of_stay_s -= 0.2 * cost_of_stay_s
+        cost_of_stay_a -= 0.1 * cost_of_stay_a
+elif month == 'June' or month == 'September':
+    ppn_s = 75.20
+    ppn_a = 68.70
+    cost_of_stay_s = lenght_of_stay * ppn_s
+    cost_of_stay_a = lenght_of_stay * ppn_a
+    if lenght_of_stay > 14:
+        cost_of_stay_s -= 0.2 * cost_of_stay_s
+        cost_of_stay_a -= 0.1 * cost_of_stay_a
+elif month == 'July' or month == 'August':
+    ppn_s = 76
+    ppn_a = 77
+    cost_of_stay_s = lenght_of_stay * ppn_s
+    cost_of_stay_a = lenght_of_stay * ppn_a
+    if lenght_of_stay > 14:
+        cost_of_stay_a -= 0.1 * cost_of_stay_a
+
+print(f"Apartment: {cost_of_stay_a:.2f} lv.")
+print(f"Studio: {cost_of_stay_s:.2f} lv.")
 
 
