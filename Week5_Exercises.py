@@ -62,33 +62,33 @@
 # Zadacha 4
 
 # Reworked solution
-cost_of_trip = float(input())
-available_money = float(input())
-money = ''
-days_passed = 0
-spending_counter = 0
-
-while cost_of_trip > available_money:
-    action = input()
-    money = float(input())
-    if action == 'save':
-        spending_counter = 0
-        available_money += money
-    elif action == 'spend':
-        spending_counter += 1
-        available_money -= money
-        if available_money < 0:
-            available_money = 0
-    days_passed += 1
-    if spending_counter == 5:
-        break
-
-
-if cost_of_trip <= available_money:
-    print(f'You saved the money for {days_passed} days.')
-else:
-    print("You can't save the money.")
-    print(f'{days_passed}')
+# cost_of_trip = float(input())
+# available_money = float(input())
+# money = ''
+# days_passed = 0
+# spending_counter = 0
+#
+# while cost_of_trip > available_money:
+#     action = input()
+#     money = float(input())
+#     if action == 'save':
+#         spending_counter = 0
+#         available_money += money
+#     elif action == 'spend':
+#         spending_counter += 1
+#         available_money -= money
+#         if available_money < 0:
+#             available_money = 0
+#     days_passed += 1
+#     if spending_counter == 5:
+#         break
+#
+#
+# if cost_of_trip <= available_money:
+#     print(f'You saved the money for {days_passed} days.')
+# else:
+#     print("You can't save the money.")
+#     print(f'{days_passed}')
 
 ######## Original mine
 # Problem was that I was making a strict comparisson for available money
