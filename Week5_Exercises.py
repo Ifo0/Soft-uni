@@ -124,3 +124,76 @@
 #             print(f'{days_passed}')
 #             break
 
+# Zadacha 5
+#
+# change = float(input()) * 100
+#
+#
+# penny = 1
+# two_penny = 2
+# five_penny = 5
+# ten_penny = 10
+# one_fifth = 20
+# half = 50
+# one = 100
+# two = 200
+#
+# coins_returned = 0
+#
+# while change > 0:
+#     if not change / two == 0:
+#         coins_returned += change // two
+#         change = change % two
+#     if not change / one == 0:
+#         coins_returned += change // one
+#         change = change % one
+#     if not change / half == 0:
+#         coins_returned += change // half
+#         change = change % half
+#     if not change / one_fifth == 0:
+#         coins_returned += change // one_fifth
+#         change = change % one_fifth
+#     if not change / ten_penny == 0:
+#         coins_returned += change // ten_penny
+#         change = change % ten_penny
+#     if not change / five_penny == 0:
+#         coins_returned += change // five_penny
+#         change = change % five_penny
+#     if not change / two_penny == 0:
+#         coins_returned += change // two_penny
+#         change = change % two_penny
+#     if not change / penny == 0:
+#         coins_returned += change // penny
+#         change = change % penny
+#     break
+#
+# print(f'{coins_returned:.0f}')
+#
+
+# Zadacha 6
+#
+# length = int(input())
+# width = int(input())
+#
+# area = length * width
+# area_const = area
+# action = ''
+# action_sum = 0
+#
+#
+# while area >= 0:
+#     action = input()
+#     if not action == 'STOP':
+#         action = int(action)
+#         area -= action
+#         action_sum += action
+#     else:
+#         left = area_const - action_sum
+#         print(f'{left} pieces are left.')
+#         break
+#
+# if not action == 'STOP':
+#     print(f'No more cake left! You need {abs(area)} pieces more.')
+
+
+
